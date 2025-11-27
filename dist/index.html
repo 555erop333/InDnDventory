@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1a1b26" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>D&D Inventory Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dnd: {
+                dark: '#1a1b26',
+                panel: '#24283b',
+                accent: '#7aa2f7',
+                gold: '#e0af68',
+                danger: '#f7768e',
+                success: '#9ece6a',
+                text: '#c0caf5',
+                muted: '#565f89'
+              }
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.3s ease-out',
+              'crumble': 'crumble 0.7s ease-in-out forwards',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(-10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar for that 'fantasy UI' feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1a1b26; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #565f89; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #7aa2f7; 
+      }
+
+      /* Crumble / Disintegrate Animation */
+      @keyframes crumble {
+        0% {
+          opacity: 1;
+          transform: scale(1) rotate(0deg);
+          filter: contrast(100%) blur(0px);
+          max-height: 500px;
+          margin-bottom: 0.5rem;
+        }
+        20% {
+          opacity: 0.8;
+          transform: scale(0.98) rotate(-1deg);
+          filter: contrast(150%) sepia(100%) blur(0px); /* Flash/Burn effect */
+        }
+        50% {
+          opacity: 0.5;
+          transform: scale(0.95) rotate(1deg);
+          filter: grayscale(100%) blur(2px); /* Turn to ash */
+        }
+        100% {
+          opacity: 0;
+          transform: scale(0.8) translateY(20px);
+          filter: grayscale(100%) blur(8px); /* Dust away */
+          max-height: 0;
+          margin-bottom: 0;
+          padding-top: 0;
+          padding-bottom: 0;
+          border: none;
+        }
+      }
+    </style>
+
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "cors": "https://aistudiocdn.com/cors@^2.8.5",
+    "express": "https://aistudiocdn.com/express@^5.1.0",
+    "bcryptjs": "https://aistudiocdn.com/bcryptjs@^3.0.3",
+    "jsonwebtoken": "https://aistudiocdn.com/jsonwebtoken@^9.0.2",
+    "mysql2/": "https://aistudiocdn.com/mysql2@^3.15.3/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-Mb2Kprjx.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BLHsikdZ.css">
+<link rel="manifest" href="/manifest.webmanifest"></head>
+  <body class="bg-dnd-dark text-dnd-text font-sans antialiased">
+    <div id="root"></div>
+</body>
+</html>

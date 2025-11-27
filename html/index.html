@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D&D Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dnd: {
+                dark: '#1a1b26',
+                panel: '#24283b',
+                accent: '#7aa2f7',
+                gold: '#e0af68',
+                danger: '#f7768e',
+                success: '#9ece6a',
+                text: '#c0caf5',
+                muted: '#565f89'
+              }
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.3s ease-out',
+              'crumble': 'crumble 0.7s ease-in-out forwards',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(-10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #1a1b26; }
+      ::-webkit-scrollbar-thumb { background: #565f89; border-radius: 4px; }
+      @keyframes crumble {
+        0% { opacity: 1; transform: scale(1); }
+        100% { opacity: 0; transform: scale(0.8) translateY(20px); filter: blur(8px); max-height: 0; margin: 0; padding: 0; border: none; }
+      }
+    </style>
+  </head>
+  <body class="bg-dnd-dark text-dnd-text font-sans antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
