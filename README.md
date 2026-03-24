@@ -43,6 +43,16 @@
 - Лог всех действий: добавление, удаление, изменение предметов и валюты
 - DM видит глобальный лог по всем персонажам
 
+<img width="2560" height="1392" alt="vivaldi_bDuagAMszR" src="https://github.com/user-attachments/assets/c48b19cf-0517-4b69-8429-088d15684e58" />
+<img width="2560" height="1392" alt="vivaldi_Ek482KawOZ" src="https://github.com/user-attachments/assets/18903e4c-906f-4b36-a705-3da991c7bd87" />
+<img width="2560" height="1392" alt="vivaldi_YGVunAyWZy" src="https://github.com/user-attachments/assets/65f677f7-8c9e-415e-b8f5-79a5ae58dfda" />
+<img width="2560" height="1392" alt="vivaldi_AkdrV1BGHQ" src="https://github.com/user-attachments/assets/c4af4991-5216-46d2-b7cd-d436225e0e82" />
+<img width="2560" height="1392" alt="vivaldi_F1LXwoYmWB" src="https://github.com/user-attachments/assets/c5f059b4-914f-4fe4-9d82-5637fedd972b" />
+<img width="2560" height="1392" alt="vivaldi_duBg7AsptN" src="https://github.com/user-attachments/assets/0948e04d-a7ab-42c3-a35b-f1514a409af2" />
+<img width="2560" height="1392" alt="vivaldi_hjp3A7ScUp" src="https://github.com/user-attachments/assets/2ebc3c04-99b8-4f14-896c-3636006f9603" />
+
+
+
 ## Стек технологий
 
 | Компонент | Технология |
